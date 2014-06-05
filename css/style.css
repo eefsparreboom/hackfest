@@ -1,12 +1,45 @@
 body,html{
     padding:0;
     margin:0;
+    /*overflow: hidden;*/
+    overflow-x:hidden;
+    overflow-y:hidden;
+    font-size:24px;
+    font-weight: bold;
+}
+body[data-page="chooser"]{
+    overflow-y:auto;
+}
+p{
+    font-size:21px;
+    font-weight: bold;
+}
+.btn-lg{
+    font-size:24px;
+    font-weight: bold;
 }
 .headernav{
-    /*margin:0;*/
+    z-index:1000;
+    margin:0;
+}
+.navbar-brand{
+    padding: 5px 21px;
+}
+.bgAnimation{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1000;
+    opacity:0.3;
 }
 .bx-wrapper{
-    height:90%;
+    height:100%;
+    margin-bottom:0px;
+}
+.bx-wrapper .bx-pager{
+    height: 50px;
+    padding-top:0px;
+    margin-top:-75px;
 }
 .bx-wrapper .bx-viewport {
 -moz-box-shadow: 0 0 0px #ccc;
@@ -20,6 +53,7 @@ background: transparent;
 -ms-transform: translatez(0);
 -o-transform: translatez(0);
 transform: translatez(0);
+height:auto !important;
 }
 /*.bx-wrapper .bx-pager{
     color:#fff;
@@ -39,11 +73,11 @@ transform: translatez(0);
     width:100%;
     padding:0;
     margin:0;
-    height:53px;
+    height:70px;
 }
 .navbar-nav.footer li a{
-    height:53px;
-    padding-top:15px;
+    height:70px;
+    padding-top:23px;
 }
 .navbar-nav.footer .back{
     text-align:left;
@@ -58,4 +92,47 @@ transform: translatez(0);
     color:#FFF;
 }
 .container{
+    z-index: 1000;
 }
+.tile-image.big-illustration {
+height: 80px;
+margin: 20px;
+width: 80px;
+}
+
+/* nutrition slide start */
+#health_score{
+    font-weight: 800;
+    clear:both;
+    margin-top:10px;
+}
+#rating, .nutrition_text{
+    display:inline;
+    float:left;
+    padding-top:0px;
+    margin-right:5px;
+}
+.heart_icon{
+    display:inline;
+    float:left;
+    width:25px;
+    padding-top:5px;
+    margin-right:2px;
+}
+.nutrition_icon{
+    display:inline;
+    float:left;
+    width:40px;
+    padding-top:5px;
+    margin-right:2px;
+    clear:both;
+}
+.nutrition_text{
+    padding-top: 6px;
+}
+.slide{
+}
+img.hamster{
+    
+}
+/* nutrition slide end */

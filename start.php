@@ -2,7 +2,7 @@
 $page='start';
 $back='/';
 $next=false;
-
+$bg = 'kitchen.jpg';
 include('header.php');
 ?>
         <div class="col-sm-6 palette palette-sun-flower">

@@ -1,6 +1,6 @@
  </div>
     <!-- /.container -->
-
+<?php if($page!=='index'){ ?>
 <nav class="navbar navbar-inverse navbar-fixed-bottom footernav" role="navigation">
          <ul class="nav navbar-nav footer">
         <li class='col-xs-4'>
@@ -17,6 +17,7 @@
         
       </ul>
       </nav>
+<?php }?>
     <!-- Load JS here for greater good =============================-->
     <script src="flat-ui/js/jquery-1.8.3.min.js"></script>
     <script src="flat-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
